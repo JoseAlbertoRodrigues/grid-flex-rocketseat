@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+#app * {
+    border: 1px solid black;
+}
+
+#app {
+    display: grid;
+
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+
+    height: 100vh;
+
+    gap: 30px; /*aplicado entre os elementos*/
+
+    border: 2px solid green;
+
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#app header {
+    grid-area: header;
+    background-color: brown;
+}
+
+#app main {
+    grid-area: main;
+    background-color: cornflowerblue;
+}
+
+#app aside {
+    grid-area: aside;
+    background-color: darkcyan;
+}
+
+#app footer {
+    grid-area: footer;
+    background-color: tomato;
+}
+
+

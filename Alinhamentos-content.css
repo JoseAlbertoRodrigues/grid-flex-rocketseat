@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+
+    height: 100vh;
+    width: 100vw;
+
+    grid-template-columns:  repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+
+    /* para alinhamento posso usar: justify, place, align */
+    /* align-content: space-between; eixo Y */
+    /* justify-content: space-between; eixo X */
+    place-content: space-between; /* é a junção do align-content e o justify-content */
+
+    /* justify-items: center; eixo X */
+    /* align-items: center; eixo Y */
+
+
+    background-color: black;
+}
+
+.grid > div {
+    background-color: cornflowerblue;
+}
+
+.grid div:nth-child(2) {
+    align-self: end;
+    justify-self: center;
+}

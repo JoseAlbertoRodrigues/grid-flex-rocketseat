@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+#app * {
+    border: 1px solid black;
+}
+
+#app {
+    display: grid;
+
+    /* raramente é utilisado  */
+    grid-template:
+    "A B B" 80px
+    "A B B" 40px
+    "A C D" 50px / 80px 1fr 2fr;
+
+    height: 100vh;
+
+    gap: 30px; /*aplicado entre os elementos*/
+
+    border: 2px solid green;
+
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#app header {
+    grid-area: A;
+    background-color: brown;
+}
+
+#app main {
+    grid-area: B;
+    background-color: cornflowerblue;
+}
+
+#app aside {
+    background-color: darkcyan;
+}
+
+#app footer {
+    background-color: tomato;
+}
+
+
